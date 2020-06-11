@@ -1,17 +1,74 @@
 .App {
-  text-align: center;
+  text-align: center;  
+
 }
 
+Button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+ 
+.logo {
+  display: flex;
+  flex: start;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.Product {
+  display: flex;
+  padding: 1rem 0;
+  max-width: 20rem; 
+  margin: 1px solid #eee;
+}
+
+.Product-title {
+  font-size: 16px;
+}
+
+.Product-price {
+  margin-bottom: 1rem;
+}
+.Product-buy-button {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+  
+  
+}
+
+.btn-secondary {
+  margin: 5px;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: row;
+
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border: none;
+  
+ 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 800px) {
+  
   }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +85,28 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  border: 5px solid #E31D23;
+  border-radius: 5px;
 }
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: left
+}
+
+.CartItem-details {
+  display: flex;
+  width: 180 px;
+}
+
+.CartItem-details div {
+  flex: 1 1 50%;
+}
+
+.CartItem-quantity {
+  padding: 0 1rem;
+}
+
